@@ -1,2 +1,2 @@
-<h1 style="text-align:center;">The Odin Project Sign-Up Form</h1>
+# The Odin Project Sign-Up Form
 Simple form made for practice as per The Odin Project
