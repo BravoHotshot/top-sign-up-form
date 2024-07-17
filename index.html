@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Sign-Up Form</title>
+    <script defer src="./script.js"></script>
 </head>
 <body>
     <div class="container">
@@ -27,29 +28,41 @@
                 <div class="details">
                     <fieldset>
                         <div>
-                            <label for="">FIRST NAME</label><br><input type="text">
+                            <label for="fname">FIRST NAME</label>
+                            <input type="text" id="fname" name="firstName">
+                            <span></span>
                         </div>
                         <div>
-                            <label for="">EMAIL</label><br><input type="text">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email">
+                            <span></span>
                         </div>
                         <div>
-                            <label for="">PASSWORD</label><br><input type="password">
+                            <label for="pwd">PASSWORD</label>
+                            <input type="password" id="pwd" name="password">
+                            <span></span>
                         </div>
                     </fieldset>
                     <fieldset>
                         <div>
-                            <label for="">LAST NAME</label><br><input type="text">
+                            <label for="lname">LAST NAME</label>
+                            <input type="text" id="lname" name="lastName">
+                            <span></span>
                         </div>
                         <div>
-                            <label for="">PHONE NUMBER</label><br><input type="text">
+                            <label for="phno">PHONE NUMBER</label>
+                            <input type="tel" id="phno" name="phoneNumber" pattern="[0-9]{10}" maxlength="10">
+                            <span class="no-error"></span>
                         </div>
                         <div>
-                            <label for="">CONFIRM PASSWORD</label><br><input type="password">
+                            <label for="pwdconfirm">CONFIRM PASSWORD</label>
+                            <input type="password" id="pwdconfirm" name="pwdConfirm">
+                            <span></span>
                         </div>
                     </fieldset>
                 </div>
             </form>
-            <div><button type="submit">CREATE ACCOUNT</button></div>
+            <div><button type="submit" form="main">CREATE ACCOUNT</button></div>
             <div class="login-msg">ALREADY HAVE AN ACCOUNT? <button>LOGIN</button></div>
         </div>
     </div>
